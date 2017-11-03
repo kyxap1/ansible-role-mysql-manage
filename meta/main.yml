@@ -1,0 +1,16 @@
+dependencies: []
+
+galaxy_info:
+  author: kyxap1
+  description: Role to manage MySQL users and databases
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.0
+  platforms:
+    - name: Ubuntu
+      versions:
+      - all
+    - name: Debian
+      versions:
+      - all
+  galaxy_tags:
+    - database
