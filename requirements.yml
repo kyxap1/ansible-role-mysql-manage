@@ -1,1 +1,1 @@
-- { name: mysql-manage, version: 8527f1ae3, src: "https://github.com/kyxap1/ansible-role-mysql-manage" }
+- { name: mysql-manage, version: 0.0.1, src: "kyxap1.mysql-manage" }
