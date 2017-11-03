@@ -1,0 +1,10 @@
+mysql_databases:
+  - name: mytest
+    state: absent
+
+mysql_users:
+  - name: mytest
+    host: "%"
+    password: quai9paasieNox
+    priv: "mytest.*:ALL"
+    state: absent

@@ -1,7 +1,0 @@
-Host 172.16.*
-  ProxyCommand    ssh -W %h:%p ubuntu@bastion.tld
-
-Host *
-  ControlMaster   auto
-  ControlPath     ~/.ssh/mux-%r@%h:%p
-  ControlPersist  15m

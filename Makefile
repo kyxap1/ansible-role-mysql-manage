@@ -1,6 +1,6 @@
 SHELL=/usr/bin/env bash
 
-.PHONY: all roles
+.PHONY: all roles converge validate
 
 all: validate
 
@@ -8,7 +8,7 @@ roles:
 	@ansible-galaxy install --ignore-certs -r requirements.yml
 
 converge:
-	@ansible-playbook playbook.yml -i inventory/aws --diff --tags mysql -l bastion.tld
+	@ansible-playbook site.yml -i inventory/aws.cfg --diff --tags mysql
 
 validate:
-	@ansible-playbook playbook.yml -i inventory/aws --diff --tags mysql -l bastion.tld --check -v
+	@ansible-playbook site.yml -i inventory/aws.cfg --diff --tags mysql --check -vv
