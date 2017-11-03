@@ -1,0 +1,7 @@
+[mysql]
+bastion.tld ansible_host=ec2-54-123-321-123.compute-1.amazonaws.com
+
+[mysql:vars]
+login_host=samplerds01.hash.us-east-1.rds.amazonaws.com
+login_user=rdsadmin
+login_password=beiboo9Eizah8j

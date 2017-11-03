@@ -1,0 +1,6 @@
+---
+- name: Ensure MySQL Python libraries are installed.
+  apt: "name=python-mysqldb state=installed"
+
+- include: databases.yml
+- include: users.yml
