@@ -3,5 +3,5 @@
   apt: "name=python-mysqldb state=installed"
   changed_when: false
 
-- include: databases.yml
-- include: users.yml
+- include_tasks: databases.yml
+- include_tasks: users.yml
